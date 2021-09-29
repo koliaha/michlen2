@@ -11,6 +11,7 @@ lib.ssMetadata = [
 
 
 
+
 (lib.bg1 = function() {
 	this.initialize(ss["Michelin_rus_atlas_"]);
 	this.gotoAndStop(0);
