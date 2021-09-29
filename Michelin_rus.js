@@ -11,7 +11,6 @@ lib.ssMetadata = [
 
 
 
-
 (lib.bg1 = function() {
 	this.initialize(ss["Michelin_rus_atlas_"]);
 	this.gotoAndStop(0);
@@ -1046,7 +1045,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 
 		if (window.DeviceMotionEvent != undefined) {
 			console.log('yes')
-			window.addEventListener("devicemotion", accelerometerUpdate, true);
+			window.addEventListener("devicemotion", accelerometerUpdate.bind(this), true);
 		}
 
 		
@@ -1063,7 +1062,7 @@ function accelerometerUpdate(event) {
 		this.gotoAndPlay(85);
 	}
  }
-		//
+		// //
 		// this.root.addEventListener("click", fl_MouseClickHandler.bind(this));
 		
 		// function fl_MouseClickHandler()
